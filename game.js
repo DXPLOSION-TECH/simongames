@@ -24,6 +24,7 @@ $(".btn").on("click", function() {
   if (player_play == true) {
     var chosen = $(this).attr("id");
     $("#" + chosen).addClass("pressed");
+    playsound(chosen);
     setTimeout(function() {
       $("#" + chosen).removeClass("pressed");
     }, 150);
@@ -92,4 +93,9 @@ function nextSequence() {
   $("." + arrayColour[randomNumbers]).fadeOut(100);
   $("." + arrayColour[randomNumbers]).fadeIn(100);
   player_play = true;
+}
+
+function playsound(var chosen){
+  var audio = new Audio("sounds/"+chosen+".mp3");
+  audio.play();
 }

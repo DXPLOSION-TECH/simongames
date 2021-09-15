@@ -23,8 +23,9 @@ function startgame() {
 $(".btn").on("click", function() {
   if (player_play == true) {
     var chosen = $(this).attr("id");
+     playsound(chosen);
     $("#" + chosen).addClass("pressed");
-    playsound(chosen);
+   
     setTimeout(function() {
       $("#" + chosen).removeClass("pressed");
     }, 150);

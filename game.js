@@ -78,6 +78,8 @@ function game() {
 
 function loser() {
   if (stats_gameover == false) {
+    var name="wrong";
+    playsound(name);
     $(".image-lose").hide();
   } else if (stats_gameover == true) {
     $(".image-lose").show();
@@ -90,6 +92,7 @@ function nextSequence() {
   $("h1").html("Level " + level);
   var randomNumbers = Math.floor(Math.random() * 4);
   generatedColour.push(arrayColour[randomNumbers]);
+  playsound(arrayColour[randomNumbers]);
   $("." + arrayColour[randomNumbers]).fadeOut(100);
   $("." + arrayColour[randomNumbers]).fadeIn(100);
   player_play = true;

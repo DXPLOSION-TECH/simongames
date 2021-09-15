@@ -1,0 +1,106 @@
+body{
+  text-align: center;
+  margin: auto;
+  background-color: #343f56;
+}
+
+h1
+{
+  font-family: 'VT323', monospace;
+  font-size: 3rem;
+  color: white;
+}
+
+h4{
+  color: white;
+}
+
+.btn{
+  border: 13px solid black;
+  border-radius: 15px;
+  height: 100px;
+  width: 100px;
+  margin: 10px;
+}
+
+#man_start {
+  position: relative;
+  left: 10px;
+  bottom: 7px;
+  background: #3498db;
+  background-image: -webkit-linear-gradient(top, #3498db, #c42525);
+  background-image: -moz-linear-gradient(top, #3498db, #c42525);
+  background-image: -ms-linear-gradient(top, #3498db, #c42525);
+  background-image: -o-linear-gradient(top, #3498db, #c42525);
+  background-image: linear-gradient(to bottom, #3498db, #c42525);
+  -webkit-border-radius: 22;
+  -moz-border-radius: 22;
+  border-radius: 22px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+#man_start:hover {
+  background: #f01f1f;
+  background-image: -webkit-linear-gradient(top, #f01f1f, #3498db);
+  background-image: -moz-linear-gradient(top, #f01f1f, #3498db);
+  background-image: -ms-linear-gradient(top, #f01f1f, #3498db);
+  background-image: -o-linear-gradient(top, #f01f1f, #3498db);
+  background-image: linear-gradient(to bottom, #f01f1f, #3498db);
+  text-decoration: none;
+}
+
+.grid{
+  width: 280px;
+  height: 280px;
+  display: inline-block;
+}
+
+.green{
+  background-color: green;
+}
+
+.image-lose{
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-3deg); }
+  20% { transform: translate(-3px, 0px) rotate(3deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(3deg); }
+  50% { transform: translate(-1px, 2px) rotate(-3deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-3deg); }
+  80% { transform: translate(-1px, -1px) rotate(3deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-3deg); }
+}
+
+.game-over{
+  background-color: red;
+}
+
+.red{
+  background-color: red;
+}
+
+.yellow{
+  background-color: yellow;
+}
+
+.blue{
+  background-color: blue;
+}
+
+.pressed{
+  background-color: white;
+}

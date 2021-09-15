@@ -95,7 +95,7 @@ function nextSequence() {
   player_play = true;
 }
 
-function playsound(var chosen){
-  var audio = new Audio("sounds/"+chosen+".mp3");
+function playsound(chosen){
+  var audio = new Audio("sounds/"+ chosen +".mp3");
   audio.play();
 }

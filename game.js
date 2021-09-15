@@ -79,10 +79,10 @@ function game() {
 
 function loser() {
   if (stats_gameover == false) {
-    var name="wrong";
-    playsound(name);
     $(".image-lose").hide();
   } else if (stats_gameover == true) {
+    var name="wrong";
+    playsound(name);
     $(".image-lose").show();
   }
 }
